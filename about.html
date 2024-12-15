@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Della Oceans</title>
+    <link rel="stylesheet" href="CSS/about.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Della Oceans</div>
+      <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="joinus.html">Join Us</a>
+          <a href="#donate" class="donate-btn">Donate</a>
+      </div>
+  </nav>
+
+    <main>
+      <section class="hero">
+        <h1>Protecting Our Oceans</h1>
+        <p>Fighting plastic pollution one wave at a time</p>
+      </section>
+
+      <section class="about-content">
+        <div class="mission">
+          <h2>Our Mission</h2>
+          <p>At Della Oceans, we are dedicated to protecting marine ecosystems from the devastating effects of plastic pollution. Through education, action, and innovation, we work tirelessly to preserve our oceans for future generations.</p>
+        </div>
+        <div class="voice-playback">
+          <button onclick="playVoiceMessage()">Hear Our Mission</button>
+      </div>
+  </div>
+
+  <script>
+      function playVoiceMessage() {
+          const audio = new Audio('voiceover/voice.MP3'); 
+          audio.play();
+      }
+    </script>
+        <div class="stats">
+          <div class="stat-card">
+            <h3>8M</h3>
+            <p>Tons of plastic removed</p>
+          </div>
+          <div class="stat-card">
+            <h3>50+</h3>
+            <p>Global partnerships</p>
+          </div>
+          <div class="stat-card">
+            <h3>100K</h3>
+            <p>Volunteers worldwide</p>
+          </div>
+        </div>
+
+        <div class="impact">
+          <h2>Our Impact</h2>
+          <div class="impact-grid">
+            <div class="impact-item">
+              <h3>Beach Cleanups</h3>
+              <p>Regular community-driven initiatives to clean coastal areas</p>
+            </div>
+            <div class="impact-item">
+              <h3>Education</h3>
+              <p>School programs teaching about ocean conservation</p>
+            </div>
+            <div class="impact-item">
+              <h3>Innovation</h3>
+              <p>Developing sustainable alternatives to single-use plastics</p>
+            </div>
+            <div class="impact-item">
+              <h3>Advocacy</h3>
+              <p>Working with governments to implement protective policies</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+          <div class="footer-section">
+              <h3>Contact Us</h3>
+              <p>Email: info@dellaoceans.org</p>
+              <p>Phone: (+45) 91 59 46 28</p>
+          </div>
+          <div class="footer-section">
+              <h3>Follow Us</h3>
+              <div class="social-links">
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2024 Della Oceans. All rights reserved.</p>
+      </div>
+  </footer>
+
+  <script type="module" src="src/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+
+:root {
+    --primary: #154F88;
+    --accent: #FFDB29;
+    --white: #FFFFFF;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #154F88;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #154F88;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 1em;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    color: #FFDB29;
+    transition: color 0.3s ease;
+}
+
+.hero {
+    text-align: center;
+    padding: 2em;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.donate-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2em auto;
+    max-width: 1200px;
+}
+
+.image-container {
+    flex: 1;
+    text-align: center;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.image-container img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.donate-card {
+    flex: 2;
+    background-color: #FFFFFF;
+    border: 2px solid #154F88;
+    padding: 2em;
+    margin: 1em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.donate-card h2 {
+    color: #154F88;
+}
+
+.donate-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.donate-card input[type="number"] {
+    padding: 0.8em;
+    margin: 5em 0;
+    border: 1px solid #154F88;
+    border-radius: 5px;
+}
+
+.donate-card button {
+    padding: 1em;
+    background-color: #FFDB29;
+    border: none;
+    color: #154F88;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.donate-card button:hover {
+    transform: scale(1.05);
+}
+
+.petition {
+    
+    margin: 2em auto;
+    text-align: center;
+}
+
+.petition a {
+    
+    color: #FFDB29;
+    text-decoration: none;
+    font-size: 1.2em;
+    background-color: #154F88;
+    padding: 0.8em 1.5em;
+    border-radius: 5px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}

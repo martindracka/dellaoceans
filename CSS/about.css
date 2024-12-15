@@ -1,0 +1,261 @@
+:root {
+  --primary: #154F88;
+  --accent: #FFDB29;
+  --white: #FFFFFF;
+
+    --transition: all 0.3s ease;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: var(--white);
+    color: var(--primary);
+}
+  
+  .navbar {
+    background-color: var(--primary);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+    
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+.nav-links a.active {
+    color: var(--accent);
+}
+
+.donate-btn {
+    background-color: var(--accent);
+    color: var(--primary) !important;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-weight: bold !important;
+    transition: transform 0.3s ease !important;
+}
+
+.donate-btn:hover {
+    transform: scale(1.05);
+    color: var(--primary);
+}
+  
+.voice-playback {
+  margin-top: -120px;
+  margin-left: -120px; /* Posunie prvok o 20px doľava */
+    /* alebo */
+    
+}
+
+.voice-playback button {
+  background-color: #154F88;
+  color: #FFFFFF;
+  border: none;
+  padding: 15px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.voice-playback button:hover {
+  background-color: #FFDB29;
+  color: #154F88;
+}
+
+  main {
+    margin-top: 60px;
+  }
+  
+  .hero {
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+  }
+  
+  .mission {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+  }
+  
+  .mission h2 {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 4rem 0;
+    flex-wrap: wrap;
+  }
+  
+  .stat-card {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 200px;
+  }
+  
+  .stat-card h3 {
+    font-size: 2.5rem;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+  }
+  
+  .impact {
+    text-align: center;
+  }
+  
+  .impact h2 {
+    color: var(--primary);
+    margin-bottom: 2rem;
+  }
+  
+  .impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .impact-item {
+    padding: 2rem;
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+    transition: var(--transition);
+  }
+  
+  .impact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .impact-item h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+  }
+
+  footer {
+    background: #154F88;
+    color: white;
+    padding: 3rem 2rem 1rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #FFDB29;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      gap: 1rem;
+    }
+    
+    .hero h1 {
+      font-size: 2rem;
+    }
+    
+    .stats {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .stat-card {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
