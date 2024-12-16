@@ -140,7 +140,7 @@ main {
     color: var(--primary);
 }
 
-/* Animations */
+
 .fade-in {
     opacity: 0;
     animation: fadeIn 1s ease-in forwards;
@@ -172,6 +172,7 @@ footer {
 
 .social-links {
     display: flex;
+
     gap: 1rem;
 }
 
@@ -211,6 +212,8 @@ footer {
         transform: translateY(0);
     }
 }
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

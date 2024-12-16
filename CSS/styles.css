@@ -242,7 +242,7 @@ nav {
     display: inline-block;
     margin: 1rem;
     padding: 0.5rem 1rem;
-    background: var(--primary-color);
+    background: #154F88;
     color: white;
     text-decoration: none;
     border-radius: 4px;
@@ -292,6 +292,20 @@ footer {
     margin-top: 2rem;
     padding-top: 2rem;
     border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+
+@media (max-width: 600px) {
+    .search-bar {
+        gap: 0.25rem; /* Mniejsza przerwa między elementami */
+        flex-direction: column; /* Układa elementy w kolumnie */
+        align-items: stretch; /* Dopasowuje szerokość elementów do rodzica */
+    }
+
+    .search-bar input, 
+    .search-bar button {
+        width: 100%; /* Zapewnia pełną szerokość dla każdego elementu */
+    }
 }
 
 /* Animations */
