@@ -1,103 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Della Oceans</title>
-    <link rel="stylesheet" href="CSS/about.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="CSS/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
     <nav class="navbar">
-      <div class="logo">Della Oceans</div>
-      <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="joinus.html">Join Us</a>
-          <a href="#donate" class="donate-btn">Donate</a>
-      </div>
-  </nav>
+        <div class="logo">Della Oceans</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="joinus.html">Join Us</a>
+            <a href="donate.html" class="donate-btn">Donate</a>
+        </div>
+    </nav>
 
     <main>
-      <section class="hero">
-        <h1>Protecting Our Oceans</h1>
-        <p>Fighting plastic pollution one wave at a time</p>
-      </section>
+        <section class="hero">
+            <h1 class="fade-in">Protecting Our Oceans</h1>
+            <p class="slide-up">Fighting plastic pollution one wave at a time</p>
+            <button onclick="toggleAudio()" class="play-btn" id="playButton">
+                <i class="fas fa-play"></i> Listen to Our Story
+            </button>
+            <audio id="storyAudio" src="voiceover/voice.MP3"></audio>
+        </section>
+    
+        
+        <script src="about.js"></script>
+        <section class="about-content">
+            <div class="image-text-container">
+                <img src="IMG/moved.png" alt="Ocean Conservation" class="side-image left">
+                <div class="text-content">
+                    <h2>Our Mission</h2>
+                    <p>At Della Oceans, we are dedicated to protecting our marine ecosystems from the devastating effects of plastic pollution. Through education, action, and innovation, we work tirelessly to create a cleaner, healthier ocean for future generations.</p>
+                </div>
+                <img src="IMG/moover.png" alt="Marine Life" class="side-image right">
+            </div>
+        </section>
 
-      <section class="about-content">
-        <div class="mission">
-          <h2>Our Mission</h2>
-          <p>At Della Oceans, we are dedicated to protecting marine ecosystems from the devastating effects of plastic pollution. Through education, action, and innovation, we work tirelessly to preserve our oceans for future generations.</p>
-        </div>
-        <div class="voice-playback">
-          <button onclick="playVoiceMessage()">Hear Our Mission</button>
-      </div>
-  </div>
-
-  <script>
-      function playVoiceMessage() {
-          const audio = new Audio('voiceover/voice.MP3'); 
-          audio.play();
-      }
-    </script>
-        <div class="stats">
-          <div class="stat-card">
-            <h3>8M</h3>
-            <p>Tons of plastic removed</p>
-          </div>
-          <div class="stat-card">
-            <h3>50+</h3>
-            <p>Global partnerships</p>
-          </div>
-          <div class="stat-card">
-            <h3>100K</h3>
-            <p>Volunteers worldwide</p>
-          </div>
-        </div>
-
-        <div class="impact">
-          <h2>Our Impact</h2>
-          <div class="impact-grid">
-            <div class="impact-item">
-              <h3>Beach Cleanups</h3>
-              <p>Regular community-driven initiatives to clean coastal areas</p>
+        <section class="stats">
+            <div class="stat-item wave-animation">
+                <h3>9M+</h3>
+                <p>Tons of Plastic Collected</p>
             </div>
-            <div class="impact-item">
-              <h3>Education</h3>
-              <p>School programs teaching about ocean conservation</p>
+            <div class="stat-item wave-animation">
+                <h3>30K+</h3>
+                <p>Volunteers Worldwide</p>
             </div>
-            <div class="impact-item">
-              <h3>Innovation</h3>
-              <p>Developing sustainable alternatives to single-use plastics</p>
+            <div class="stat-item wave-animation">
+                <h3>60+</h3>
+                <p>Beach Cleanup Events</p>
             </div>
-            <div class="impact-item">
-              <h3>Advocacy</h3>
-              <p>Working with governments to implement protective policies</p>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
     </main>
-    <footer>
-      <div class="footer-content">
-          <div class="footer-section">
-              <h3>Contact Us</h3>
-              <p>Email: info@dellaoceans.org</p>
-              <p>Phone: (+45) 91 59 46 28</p>
-          </div>
-          <div class="footer-section">
-              <h3>Follow Us</h3>
-              <div class="social-links">
-                  <a href="#"><i class="fab fa-facebook"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-              </div>
-          </div>
-      </div>
-      <div class="footer-bottom">
-          <p>&copy; 2024 Della Oceans. All rights reserved.</p>
-      </div>
-  </footer>
 
-  <script type="module" src="main.js"></script>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: info@dellaoceans.com</p>
+                <p>Phone: (+45) 91 59 46 28</p>
+                <p>Address: Baldursgade 4 </p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="joinus.html">Join us</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Della Oceans. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="about.js"></script>
 </body>
 </html>

@@ -3,51 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Della Oceans </title>
+    <title>Della Oceans - Protect Our Oceans</title>
     <link rel="stylesheet" href="CSS/donate.css">
-    <link rel="stylesheet" href="">
-    <head>
-        <body>
-            
-    
-            <nav class="navbar">
-                <div class="logo">Della Oceans</div>
-                <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="joinus.html">Join Us</a>
-                    <a href="#donate" class="donate-btn">Donate</a>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Della Oceans</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="joinus.html">Join Us</a>
+            <a href="donate.html" class="donate-btn">Donate</a>
+        </div>
+    </nav>
+
+    <header class="hero" id="hero-section">
+        <div class="hero-content">
+            <h1 class="animate-fade-in">Help Us Protect Our Oceans</h1>
+            <p class="animate-slide-up">Join our mission to eliminate plastic pollution and preserve marine life</p>
+            <button class="cta-button animate-bounce">Donate Now</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="donation-section">
+            <div class="donation-container">
+                <h2>Make a Difference Today</h2>
+                <div class="donation-options">
+                    <button class="donation-amount">$10</button>
+                    <button class="donation-amount">$25</button>
+                    <button class="donation-amount">$50</button>
+                    <button class="donation-amount">$100</button>
+                    <button class="donation-amount custom">Custom Amount</button>
                 </div>
-            </nav>
+                <form class="donation-form">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email Address">
+                    <input type="text" placeholder="Card Number">
+                    <div class="form-row">
+                        <input type="text" placeholder="MM/YY">
+                        <input type="text" placeholder="CVV">
+                    </div>
+                    <button type="submit" class="submit-button">Complete Donation</button>
+                </form>
+            </div>
+            <div class="side-images">
+                <div class="image-placeholder left">Side Image 1</div>
+                <div class="image-placeholder right">Side Image 2</div>
+            </div>
+        </section>
+    </main>
 
-    
-    <div class="hero">
-        <h1>Help Us Protect the Oceans</h1>
-        <p>Every contribution helps us fight against ocean plastic pollution.</p>
-    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: info@dellaoceans.com</p>
+                <p>Phone: (+45) 91 59 46 28</p>
+                <p>Address: Baldursgade 4</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="joinus.html">Join us</a></li>
+                    <li><a href="privacy.html">Privacy Policy </a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Della Oceans. All rights reserved.</p>
+        </div>
+    </footer>
 
-    
-    <div class="donate-section">
-        <div class="image-container">
-            <img src="IMG/moved.png" alt="Ocean Image">
-        </div>
-        <div class="donate-card">
-            <h2>Make a Donation</h2>
-            <form>
-                <label for="amount">Enter amount:</label>
-                <input type="number" id="amount" name="amount" placeholder="Enter amount in DK" min="1">
-                <button type="submit">Donate</button>
-            </form>
-        </div>
-        <div class="image-container">
-            <img src="IMG/moover.png" alt="Eco Image">
-        </div>
-    </div>
-
-    
-    <div class="petition">
-        <p>Join us in signing the petition to create a global plastics treaty:</p>
-        <a href="https://www.greenpeace.org.au/act/global-plastics-treaty" target="_blank">Sign the Petition</a>
-    </div>
+    <script src="main.js"></script>
 </body>
 </html>

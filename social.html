@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Della Oceans - Protecting Our Oceans</title>
+    <link rel="stylesheet" href="CSS/social.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <a href="index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i> Back
+    </a>
+    
+    <div class="container">
+        <header>
+            <div class="wave-animation"></div>
+            <h1>Della Oceans</h1>
+            <p class="tagline">Protecting Our Oceans from Plastic Pollution</p>
+        </header>
+
+        <div class="social-grid">
+            <div class="social-card" data-platform="instagram">
+                <i class="fab fa-instagram"></i>
+                <h2>Instagram</h2>
+                <p>Follow our ocean cleanup journey</p>
+            </div>
+            
+            <div class="social-card" data-platform="twitter">
+                <i class="fab fa-twitter"></i>
+                <h2>Twitter</h2>
+                <p>Latest updates and ocean facts</p>
+            </div>
+            
+            <div class="social-card" data-platform="facebook">
+                <i class="fab fa-facebook"></i>
+                <h2>Facebook</h2>
+                <p>Join our community events</p>
+            </div>
+            
+            <div class="social-card" data-platform="linkedin">
+                <i class="fab fa-linkedin"></i>
+                <h2>LinkedIn</h2>
+                <p>Professional network & partnerships</p>
+            </div>
+        </div>
+
+        <div id="social-preview" class="social-preview">
+            <div class="preview-content">
+                <button class="close-btn">&times;</button>
+                <div id="preview-details"></div>
+            </div>
+        </div>
+
+        <section class="news-section">
+            <h2>Latest News</h2>
+            
+            <div class="news-category">
+                <h3>This Week's Events</h3>
+                <div class="news-grid" id="this-week-news"></div>
+            </div>
+
+            <div class="news-category">
+                <h3>This Month's Events</h3>
+                <div class="news-grid" id="this-month-news"></div>
+            </div>
+        </section>
+    </div>
+    <script type="module" src="social.js"></script>
+</body>
+</html>

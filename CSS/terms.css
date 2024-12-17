@@ -1,0 +1,125 @@
+:root {
+    --primary-color: #154F88;
+    --accent-color: #FFDB29;
+    --background-color: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #ff4444;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+.back-button:hover {
+    transform: scale(1.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    padding: 2rem 0;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    animation: fadeInDown 1s ease-out;
+}
+
+.wave-animation {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    animation: waveMove 3s infinite linear;
+}
+
+.policy-section {
+    background-color: rgba(21, 79, 136, 0.05);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    transform: translateY(50px);
+    opacity: 0;
+    animation: slideUp 0.8s ease-out forwards;
+}
+
+.policy-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.policy-section ul {
+    list-style-position: inside;
+    margin-left: 1rem;
+}
+
+.policy-section li {
+    margin-bottom: 0.5rem;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes waveMove {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100vw 0;
+    }
+}
+
+@keyframes slideUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.policy-section:nth-child(1) { animation-delay: 0.2s; }
+.policy-section:nth-child(2) { animation-delay: 0.4s; }
+.policy-section:nth-child(3) { animation-delay: 0.6s; }
+.policy-section:nth-child(4) { animation-delay: 0.8s; }
+.policy-section:nth-child(5) { animation-delay: 1s; }
