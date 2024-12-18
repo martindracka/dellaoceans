@@ -118,18 +118,41 @@ nav {
     margin-top: 60px;
 }
 
+.hero-img {
+    position: absolute; /* Absolútna pozícia */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Prispôsobí veľkosť obrázka */
+    z-index: 0; /* Obrázok bude vzadu */
+    filter: brightness(50%); /* Tmavšia úprava pre čitateľnosť textu */
+}
 
+.heron {
+    height: 100vh;
+    
+    
+    background-position: center;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 60px;
+}
 
 .hero-content {
     text-align: center;
     color: white;
     z-index: 1;
+    margin-top: -1700px;
 }
 
 .hero-content h1 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
     animation: fadeInUp 1s ease-out;
+    margin-top: 700px;
 }
 
 .hero-content p {

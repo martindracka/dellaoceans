@@ -34,6 +34,8 @@ body {
     z-index: 1000;
 }
 
+
+
 .nav-logo {
     color: var(--white);
     font-size: 1.5rem;
@@ -84,6 +86,29 @@ body {
     position: relative;
 }
 
+.hero-img {
+    position: absolute; /* Absolútna pozícia */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Prispôsobí veľkosť obrázka */
+    z-index: 0; /* Obrázok bude vzadu */
+    filter: brightness(50%); /* Tmavšia úprava pre čitateľnosť textu */
+}
+
+.heron {
+    height: 100vh;
+    
+    
+    background-position: center;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 60px;
+}
+
 .hero::before {
     content: '';
     position: absolute;
@@ -98,11 +123,13 @@ body {
     position: relative;
     color: var(--white);
     padding: 2rem;
+    margin-top: -1700px;
 }
 
 .hero h1 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
+    margin-top: 700px;
 }
 
 .hero p {
