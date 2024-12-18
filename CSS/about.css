@@ -18,7 +18,7 @@ body {
   background-color: var(--white);
 }
 
-/* Navbar Styles */
+
 .navbar {
   background-color: var(--primary);
   padding: 1rem 2rem;
@@ -69,7 +69,7 @@ body {
   color: var(--primary);
 }
 
-/* Hero Section */
+
 .hero {
   height: 100vh;
   display: flex;
@@ -84,14 +84,14 @@ body {
 }
 
 .hero-img {
-  position: absolute; /* Absolútna pozícia */
+  position: absolute; 
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Prispôsobí veľkosť obrázka */
-  z-index: 0; /* Obrázok bude vzadu */
-  filter: brightness(50%); /* Tmavšia úprava pre čitateľnosť textu */
+  object-fit: cover; 
+  z-index: 0; 
+  filter: brightness(50%); 
   margin-top: -1700px;
 }
 
@@ -108,7 +108,7 @@ body {
 }
 
 
-/* Animations */
+
 .fade-in {
   animation: fadeIn 2s ease-in;
 }
@@ -136,7 +136,7 @@ body {
   50% { transform: translateY(-10px); }
 }
 
-/* Content Sections */
+
 .about-content {
   padding: 4rem 2rem;
 }
@@ -161,7 +161,7 @@ body {
   padding: 2rem;
 }
 
-/* Stats Section */
+
 .stats {
   display: flex;
   justify-content: space-around;
@@ -179,7 +179,7 @@ body {
   color: var(--accent);
 }
 
-/* Audio Button */
+
 .play-btn {
   background-color: var(--accent);
   color: var(--primary);
@@ -197,7 +197,7 @@ body {
   transform: scale(1.05);
 }
 
-/* Footer */
+
 footer {
   background-color: var(--primary);
   color: var(--white);

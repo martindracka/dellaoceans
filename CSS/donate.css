@@ -73,10 +73,10 @@ body {
     color: var(--primary);
 }
 
-/* Hero Section */
+
 .hero {
     height: 100vh;
-    background-image: url('hero-bg.jpg'); /* User can replace this with their image */
+    background-image: url('hero-bg.jpg'); 
     background-size: cover;
     background-position: center;
     display: flex;
@@ -87,14 +87,14 @@ body {
 }
 
 .hero-img {
-    position: absolute; /* Absolútna pozícia */
+    position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Prispôsobí veľkosť obrázka */
-    z-index: 0; /* Obrázok bude vzadu */
-    filter: brightness(50%); /* Tmavšia úprava pre čitateľnosť textu */
+    object-fit: cover; 
+    z-index: 0; 
+    filter: brightness(50%); 
 }
 
 .heron {
@@ -137,7 +137,7 @@ body {
     margin-bottom: 2rem;
 }
 
-/* Donation Section */
+
 .donation-section {
     padding: 4rem 2rem;
     background-color: var(--white);
@@ -207,7 +207,7 @@ body {
     background-color: var(--dark-blue);
 }
 
-/* Side Images */
+
 .side-images {
     position: absolute;
     top: 50%;
@@ -234,7 +234,7 @@ body {
     right: 2rem;
 }
 
-/* Footer */
+
 footer {
     background-color: #154F88;
     color: white;
@@ -330,7 +330,7 @@ footer {
       gap: 2rem;
   }
 }
-/* Animations */
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }

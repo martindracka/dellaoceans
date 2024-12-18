@@ -17,7 +17,7 @@ body {
     color: var(--primary);
 }
 
-/* Navigation */
+
 nav {
     background-color: var(--primary);
     padding: 1rem 2rem;
@@ -105,7 +105,7 @@ nav {
 
 
 
-/* Hero Section */
+
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/1600x900/?ocean-pollution');
@@ -119,14 +119,14 @@ nav {
 }
 
 .hero-img {
-    position: absolute; /* Absolútna pozícia */
+    position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Prispôsobí veľkosť obrázka */
-    z-index: 0; /* Obrázok bude vzadu */
-    filter: brightness(50%); /* Tmavšia úprava pre čitateľnosť textu */
+    object-fit: cover; 
+    z-index: 0; 
+    filter: brightness(50%); 
 }
 
 .heron {
@@ -178,7 +178,7 @@ nav {
     background: #FFDB29;
 }
 
-/* Statistics Section */
+
 .statistics {
     padding: 5rem 2rem;
     background: var(--background-color);
@@ -216,7 +216,7 @@ nav {
     margin-bottom: 0.5rem;
 }
 
-/* Action Section */
+
 .action-section {
     padding: 5rem 2rem;
 }
@@ -277,7 +277,7 @@ nav {
     background: var(--secondary-color);
 }
 
-/* Footer */
+
 footer {
     background-color: var(--primary);
     color: var(--white);
@@ -334,18 +334,18 @@ footer {
 
 @media (max-width: 600px) {
     .search-bar {
-        gap: 0.25rem; /* Mniejsza przerwa między elementami */
-        flex-direction: column; /* Układa elementy w kolumnie */
-        align-items: stretch; /* Dopasowuje szerokość elementów do rodzica */
+        gap: 0.25rem; 
+        flex-direction: column; 
+        align-items: stretch; 
     }
 
     .search-bar input, 
     .search-bar button {
-        width: 100%; /* Zapewnia pełną szerokość dla każdego elementu */
+        width: 100%; 
     }
 }
 
-/* Animations */
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -357,7 +357,7 @@ footer {
     }
 }
 
-/* Wave Animation */
+
 .wave {
     position: absolute;
     bottom: 0;
