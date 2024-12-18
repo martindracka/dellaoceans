@@ -254,9 +254,17 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .nav-links {
-      gap: 1rem;
-  }
+ 
+
+  .nav-content {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.nav-links {
+    flex-direction: column;
+    gap: 1rem;
+}
   
   .image-text-container {
       flex-direction: column;
