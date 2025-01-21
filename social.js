@@ -114,7 +114,7 @@ export const newsData = {
             date: '2024-03-15',
             title: 'Marine Life Conservation Summit',
             description: 'Annual gathering of ocean conservation experts and advocates.',
-            image: 'IMG/join.jpg'
+            image: 'IMG/join.jpg '
         }
     ]
 };
