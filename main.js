@@ -1,8 +1,5 @@
 
 
-import { setupIntersectionObserver } from './js/animations.js';
-import { setupSmoothScroll } from './js/navigation.js';
-import { applyNow } from './js/careers.js';
 
 // Initialize all functionality
 document.addEventListener('DOMContentLoaded', () => {
